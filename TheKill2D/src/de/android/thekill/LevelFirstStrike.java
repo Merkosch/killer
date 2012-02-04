@@ -120,12 +120,10 @@ public class LevelFirstStrike implements TheKillLevel{
 	    firstChild.attachChild(rightOuter);
 	}
 
-	@Override
 	public int getLevelWidth() {
 		return LEVEL_WIDTH;
 	}
 
-	@Override
 	public int getLevelHeight() {
 		return LEVEL_HEIGHT;
 	}
