@@ -26,4 +26,12 @@ Einrichtung Github auf neuem Rechner HOWTO
 	-					  Vielleicht noch ein Clean auf das Projekt und nochmal ausführen um gen zu erzeugen.
 	- 					  Sollten Fehler im Quellcode auftauchen, setze das Compilance Level von Java 1.5 auf 1.6 
 																  Projekt -> Properties -> Java Compiler
-	- 					  Jetzt sollte das leufen!
+	- 					  Jetzt sollte das laufen!
+	
+	Committe alles lokal
+	Pushe alles in den master Branch
+	Wenns mal mit Eclipse nicht geht nutze Gitbash
+		- Ins Repo wechseln
+		- git pull origin master um den aktuellen master zu holen 
+		- git push origin master um die Änderungen in den master zu bringen 
+		- git fetch origin Aktualisiert die Remote-Branches
