@@ -1,0 +1,27 @@
+Einrichtung Github auf neuem Rechner HOWTO
+	
+	- Installiere Eclipse und darauf EGIT versuchs mal über den Marketplace
+	- Am Projekt Team-> Share Project (für ein neues Projekt)
+
+	Keys Einrichten (neuer Rechner)
+	- Erstelle einen RSA Key und füge diesen im Projekt unter Github.com hinzu
+  	  Siehe hier -> http://help.github.com/win-set-up-git/
+  	- Mache den private Key in Eclipse bekannt Pref->General->Network Connections->ssh
+  	- Wenn das nicht geht versuche dich mit Gitbash zu connecten: 
+  	  		$ ssh -T git@github.com
+			Enter passphrase for key '/c/Users/ESP/.ssh/id_rsa':
+			Hi Merkosch! You've successfully authenticated, ...
+    - Nenne den Remote immer origin!
+
+	Bestehendes Projekt
+	- Github.com Loginuser: Merkosch PW: standard light pw ^^ 
+	  Github.com Die Adresse ist: 
+	  Wishlist 			-> git@github.com:Merkosch/warrior.git
+	  TheKill2D			-> git@github.com:Merkosch/killer.git
+	  
+	- Im Package Explorer Import->Projects from Git (zum Auschecken) 
+	- Nach dem Auschecken Rechtsklick auf Projekt -> Android Tools -> Fix Project Properties
+	-                     Legen einen Ordner assets im Grundverzeichnis neu an (nur wenn er leer ist)
+	-					  Versuche das Projekt als Android Anwendung auszuführen, dann wird der gen Ordner erzeugt.
+	- 					  Sollten Fehler im Quellcode auftauchen, korrigiere sie! 
+	- 					  Jetzt sollte das leufen!
