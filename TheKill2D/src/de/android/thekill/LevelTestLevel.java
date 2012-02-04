@@ -184,17 +184,14 @@ public class LevelTestLevel implements TheKillLevel{
 	        firstChild.attachChild(rightInner);
 	}
 
-	@Override
 	public int getLevelWidth() {
 		return LEVEL_WIDTH;
 	}
 
-	@Override
 	public int getLevelHeight() {
 		return LEVEL_HEIGHT;
 	}
 
-	@Override
 	public void addSprite(Scene pScene, int x, int y) {
 		// TODO Auto-generated method stub
 		

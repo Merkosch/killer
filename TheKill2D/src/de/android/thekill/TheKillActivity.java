@@ -101,7 +101,6 @@ public class TheKillActivity extends BaseGameActivity{
     private TheKillLevel 	level;
     private CharacterLoader characterLoader;
 
-    @Override
     public Engine onLoadEngine() {
     	
     	Log.d("***************Startup*****************", 
@@ -161,7 +160,6 @@ public class TheKillActivity extends BaseGameActivity{
         return engine;
     }
     
-    @Override
     public void onLoadResources() {
     	
     	TextureRegionFactory.setAssetBasePath("gfx/");
@@ -191,7 +189,6 @@ public class TheKillActivity extends BaseGameActivity{
 		}
     }
 
-    @Override
     public Scene onLoadScene() {
             this.mEngine.registerUpdateHandler(new FPSLogger());
 
@@ -212,13 +209,11 @@ public class TheKillActivity extends BaseGameActivity{
             
             mEngine.registerUpdateHandler(new IUpdateHandler() {
 				
-				@Override
 				public void reset() {
 					// TODO Auto-generated method stub
 					
 				}
 				
-				@Override
 				public void onUpdate(float pSecondsElapsed) {
 					for (int i = 0 ; i < scene.getChildCount() ; i++) {
 						if (scene.getChild(i) instanceof Bullet){
@@ -238,7 +233,6 @@ public class TheKillActivity extends BaseGameActivity{
             return scene;
     }
 
-    @Override
     public void onLoadComplete() {
 
     }
@@ -254,7 +248,6 @@ public class TheKillActivity extends BaseGameActivity{
             	    							this.mOnScreenControlKnobTextureRegion, 
             	    							0.1f, 200, 
             	    							new IAnalogOnScreenControlListener() {
-	                    @Override
 	                    public void onControlChange(final BaseOnScreenControl pBaseOnScreenControl, final float pValueX, final float pValueY) {                        
 	                         
 	    					final Body carBody = characterLoader.getmCharacterBody();
@@ -280,7 +273,6 @@ public class TheKillActivity extends BaseGameActivity{
 	    						characterLoader.getCharacter().stopAnimation();
 	                    }
 	
-	                    @Override
 	                    public void onControlClick(AnalogOnScreenControl pAnalogOnScreenControl) {
 	                            // Mache Nix! 
 	                    		// Log.d("TheKill2D", "ControlClick...");  
@@ -307,7 +299,6 @@ public class TheKillActivity extends BaseGameActivity{
 		    			private float lastX;
 		    			private float lastY;
 		    			
-		    			@Override
 		    			public void onControlChange(BaseOnScreenControl pBaseOnScreenControl, float pValueX, float pValueY) {
 		    				
 		    				// Nur Feuern, wenn der Controller betätigt ist
@@ -325,7 +316,6 @@ public class TheKillActivity extends BaseGameActivity{
 		    				}
 		    			}
 		
-		    			@Override
 		    			public void onControlClick(AnalogOnScreenControl pAnalogOnScreenControl) {
 		    				// TODO Auto-generated method stub
 //		    				Log.d("TheKill2D", "+++++Klick+++++");

@@ -11,7 +11,6 @@ public class FireControllListener implements IAnalogOnScreenControlListener{
 	private float lastX;
 	private float lastY;
 	
-	@Override
 	public void onControlChange(BaseOnScreenControl pBaseOnScreenControl, float pValueX, float pValueY) {
 		
 		// Nur Feuern, wenn der Controller betätigt ist
@@ -27,7 +26,6 @@ public class FireControllListener implements IAnalogOnScreenControlListener{
 		}
 	}
 
-	@Override
 	public void onControlClick(AnalogOnScreenControl pAnalogOnScreenControl) {
 		// TODO Auto-generated method stub
 		Log.d("TheKill2D", "+++++Klick+++++");

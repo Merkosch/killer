@@ -12,13 +12,11 @@ public class Bullet extends Sprite implements IShape{
 		
 		Bullet.this.registerUpdateHandler(new IUpdateHandler() {
 			
-			@Override
 			public void reset() {
 				// TODO Auto-generated method stub
 				
 			}
 			
-			@Override
 			public void onUpdate(float pSecondsElapsed) {
 				// TODO Auto-generated method stub
 			
