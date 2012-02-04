@@ -24,5 +24,6 @@ Einrichtung Github auf neuem Rechner HOWTO
 	-                     Legen einen Ordner assets im Grundverzeichnis neu an (nur wenn er leer ist)
 	-					  Versuche das Projekt als Android Anwendung auszuführen, dann wird der gen Ordner erzeugt.
 	-					  Vielleicht noch ein Clean auf das Projekt und nochmal ausführen um gen zu erzeugen.
-	- 					  Sollten Fehler im Quellcode auftauchen, korrigiere sie! 
+	- 					  Sollten Fehler im Quellcode auftauchen, setze das Compilance Level von Java 1.5 auf 1.6 
+																  Projekt -> Properties -> Java Compiler
 	- 					  Jetzt sollte das leufen!
